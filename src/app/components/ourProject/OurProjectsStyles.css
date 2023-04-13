@@ -25,7 +25,7 @@
     justify-content: center;
 }
 .grid-project{
-  font-family: 'Bodoni Moda';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -33,7 +33,7 @@
   color: #BC5A5B;
 }
 .grid-description{
-  font-family: 'Roboto Flex';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -51,7 +51,7 @@
   margin-left: 5%;
 }
 .InfoContent h1{
-  font-family: 'Bodoni Moda';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -60,7 +60,7 @@
   color: #FFFFFF;
 }
 .InfoContent p{
-  font-family: 'Roboto Flex';
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -89,7 +89,7 @@ color: #FFFFFF;
   background: url(../../../assets/Img2.png);
 }
 .ProjectDetail1 p{
-  font-family: 'Roboto Flex';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
