@@ -193,7 +193,7 @@ const NavBarComponent = () => {
             }}
             variant="contained"
             onClick={handleCloseNavMenu}
-            sx={{ mx: 8, color: "white", display: "block", marginLeft: "" }}
+            sx={{ mx: 8, color: "white", display: "block", marginLeft: "", marginRight: { xl: "64px", md: "20px" } }}
             exact
             component={NavLink}
             to="/"
@@ -209,7 +209,7 @@ const NavBarComponent = () => {
             }}
             variant="contained"
             onClick={handleCloseNavMenu}
-            sx={{ mx: 8, color: "white", display: "block", marginLeft: "" }}
+            sx={{ mx: 8, color: "white", display: "block", marginLeft: "", marginRight: { xl: "64px", md: "20px" } }}
             exact
             component={NavLink}
             to="/aboutUs"
@@ -226,7 +226,12 @@ const NavBarComponent = () => {
             }}
             variant="contained"
             onClick={handleCloseNavMenu}
-            sx={{ mx: 8, color: "white", display: "block", marginLeft: "" }}
+            sx={{
+              mx: 8, color: "white",
+              display: "block",
+              marginLeft: "",
+              marginRight: { xl: "64px", md: "20px" },
+            }}
             exact
             component={NavLink}
             to="/ourTeam"
@@ -243,7 +248,7 @@ const NavBarComponent = () => {
             }}
             variant="contained"
             onClick={handleCloseNavMenu}
-            sx={{ mx: 8, color: "white", display: "block", marginLeft: "" }}
+            sx={{ mx: 8, color: "white", display: "block", marginLeft: "", marginRight: { xl: "64px", md: "20px" } }}
             exact
             component={NavLink}
             to="/ourProject"
@@ -261,7 +266,7 @@ const NavBarComponent = () => {
             size="large"
             variant="contained"
             onClick={handleCloseNavMenu}
-            sx={{ mx: 8, color: "white", display: "block" }}
+            sx={{ mx: 8, color: "white", display: "block", marginRight: { xl: "64px", md: "20px" } }}
             exact
             component={NavLink}
             to="/contactUs"
@@ -282,6 +287,7 @@ const NavBarComponent = () => {
                 mx: 8,
                 color: "white",
                 display: "block",
+                marginRight: { xl: "64px", md: "20px" }
               }}
               exact
               component={NavLink}
