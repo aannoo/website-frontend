@@ -34,19 +34,18 @@ export default function OurProjectComponent() {
 			    <div className="Img2"></div>
 				<div className="ProjectDetail1">
 				<p>
-					• The development of an engaged and self-sustaining online community{" "}
-					<br></br>
-					<br></br>• The ability to provide real-time performance feedback to
-					users through cutting edge IoT sensors and AI <br></br>
-					<br></br>• Fully immersive 3D worlds that users can experience from
-					the comfort of their own homes. <br></br>
-					<br></br>
-					<br></br>
-					To be able to realize these objectives, Redback Operations has
+					<ul>
+					<li>The development of an engaged and self-sustaining online community</li>
+					<li>The ability to provide real-time performance feedback to
+					users through cutting edge IoT sensors and AI </li>
+					<li>Fully immersive 3D worlds that users can experience from
+					the comfort of their own homes. </li>
+					<li>To be able to realize these objectives, Redback Operations has
 					enlisted the skills and attributes of data scientists and analysts,
 					IoT specialists, Game developers, cyber security specialists, web
 					development, and DevOps experts all guided to success by a core team
-					of project managers.
+					of project managers.</li>
+					</ul>
 				</p>
 			</div>
 			</div>

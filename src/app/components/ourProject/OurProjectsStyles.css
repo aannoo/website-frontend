@@ -92,14 +92,14 @@ color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
  /* or 167% */
   color: #FFFFFF; 
 }
 .ProjectDetail1{
-  margin-top: -5%;
-  width: 558px;
+  width: 640px;
+  margin-top: 20px;
   height: 422px;
 }
 .Rectangle1 {
