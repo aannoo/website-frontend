@@ -37,7 +37,7 @@ export default function ContactUsComponent() {
             gutterBottom
             variant="h4"
             style={{
-              fontFamily: "Bodoni Moda",
+              fontFamily: "Roboto",
               fontSize: "40",
               color: "#FFFFFF",
             }}
