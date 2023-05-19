@@ -1,7 +1,19 @@
 .contactUs-center {
     margin: auto;
     width: 50%;
-    margin-top:200px;
+    margin-top:50px;
     padding: 10px;
-    text-decoration: white;
+    text-decoration: white !important;
+  }
+
+  @media screen and (max-width: 1200px) {
+    h4 {
+      font-size: 45px !important;
+    }
+    h6 {
+      font-size: 20px !important;
+    }
+    .contactUs-center, .center {
+      width: 100%;
+    }
   }
