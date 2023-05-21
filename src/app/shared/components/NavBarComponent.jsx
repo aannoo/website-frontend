@@ -7,7 +7,6 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import image from "../../../../src/assets/logo-redback.png";
@@ -38,11 +37,8 @@ const NavBarComponent = () => {
   };
 
   return (
-    <Container maxWidth="x">
-      <Toolbar
-        disableGutters
-        style={{ position: "relative", paddingRight: "20px" }}
-      >
+    <Box sx={{ flexGrow: 1, overflowX: "hidden", overflowY: "hidden", padding: "0 25px" }}>
+      <Toolbar disableGutters>
         <Typography
           sx={{
             mr: 2,
@@ -85,9 +81,6 @@ const NavBarComponent = () => {
             }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none", color: "white" },
-            }}
           >
             <MenuItem onClick={handleCloseNavMenu}>
               <Typography textAlign="center" exact component={NavLink} to="/">
@@ -112,7 +105,6 @@ const NavBarComponent = () => {
                 component={NavLink}
                 to="/ourTeam"
               >
-                {" "}
                 Our Team
               </Typography>
             </MenuItem>
@@ -124,7 +116,6 @@ const NavBarComponent = () => {
                 component={NavLink}
                 to="/ourProject"
               >
-                {" "}
                 Our Project
               </Typography>
             </MenuItem>
@@ -136,7 +127,6 @@ const NavBarComponent = () => {
                 component={NavLink}
                 to="/contactUs"
               >
-                {" "}
                 Contact Us
               </Typography>
             </MenuItem>
@@ -148,7 +138,6 @@ const NavBarComponent = () => {
                 component={NavLink}
                 to="/loginIn"
               >
-                {" "}
                 Login In
               </Typography>
             </MenuItem>
@@ -183,11 +172,20 @@ const NavBarComponent = () => {
           component={NavLink}
           to="/"
         ></Typography>
-        <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", md: "flex" },
+            justifyContent: "space-between",
+          }}
+        >
           <Button
             variant="text"
-            onClick={handleCloseNavMenu}
-            sx={{ mx: 20, color: "black", display: "block", marginRight: "", paddingTop: "20px"}}
+            sx={{
+              color: "black",
+              fontWeight: "bold",
+              whiteSpace: "nowrap",
+            }}
             exact
             component={NavLink}
             to="/"
@@ -196,8 +194,11 @@ const NavBarComponent = () => {
           </Button>
           <Button
             variant="text"
-            onClick={handleCloseNavMenu}
-            sx={{ mx: 20, color: "black", display: "block", marginRight: "", paddingTop: "20px"}}
+            sx={{
+              color: "black",
+              fontWeight: "bold",
+              whiteSpace: "nowrap",
+            }}
             exact
             component={NavLink}
             to="/aboutUs"
@@ -207,8 +208,11 @@ const NavBarComponent = () => {
 
           <Button
             variant="text"
-            onClick={handleCloseNavMenu}
-            sx={{ mx: 20, color: "black", display: "block", marginRight: "", paddingTop: "20px"}}
+            sx={{
+              color: "black",
+              fontWeight: "bold",
+              whiteSpace: "nowrap",
+            }}
             exact
             component={NavLink}
             to="/ourTeam"
@@ -218,8 +222,11 @@ const NavBarComponent = () => {
 
           <Button
             variant="text"
-            onClick={handleCloseNavMenu}
-            sx={{ mx: 20, color: "black", display: "block", marginRight: "", paddingTop: "20px"}}
+            sx={{
+              color: "black",
+              fontWeight: "bold",
+              whiteSpace: "nowrap",
+            }}
             exact
             component={NavLink}
             to="/ourProject"
@@ -228,20 +235,14 @@ const NavBarComponent = () => {
           </Button>
 
           <Button
-            size="large"
-            variant="text"
-            onClick={handleCloseNavMenu}
-            sx={{                 
-              mx: 20,
-              color: "black",
+            variant="outlined"
+            sx={{
+              color: "white",
               fontWeight: "bold",
-              display: "block",
-              marginRight: "",
-              border: "1px solid black",
-              backgroundColor: "transparent",
-              padding: "18px 18px",
-              fontSize: "0.8vw",
-              // marginTop: "-10px", 
+              borderColor: "#E9624C",
+              backgroundColor: "#E9624C",
+              whiteSpace: "nowrap",
+              borderRadius: "5px",
             }}
             exact
             component={NavLink}
@@ -254,15 +255,9 @@ const NavBarComponent = () => {
             <Button
               variant="text"
               sx={{
-                mx: 20,
                 color: "black",
                 fontWeight: "bold",
-                display: "block",
-                marginRight: "",
-                border: "1px solid black",
-                backgroundColor: "transparent",
-                padding: "18px 18px",
-                fontSize: "0.8vw",
+                whiteSpace: "nowrap",
               }}
               exact
               component={NavLink}
@@ -273,28 +268,22 @@ const NavBarComponent = () => {
             </Button>
           ) : (
             <Button
-              variant="text"
+              variant="outlined"
               sx={{
-                mx: 20,
-                color: "black",
+                color: "#E9624C",
                 fontWeight: "bold",
-                display: "block",
-                marginRight: "",
-                border: "1px solid black",
+                borderColor: "#E9624C",
+                whiteSpace: "nowrap",
                 backgroundColor: "transparent",
-                padding: "18px 18px",
-                fontSize: "0.8vw",
               }}
               exact
               component={NavLink}
               to="/loginIn"
-              // onClick={() => globalDispatch({ type: "LOGIN" })}
             >
               SignIn
             </Button>
           )}
         </Box>
-
         <Box sx={{ flexGrow: 0 }}>
           <Menu
             sx={{ mt: "45px" }}
@@ -314,7 +303,8 @@ const NavBarComponent = () => {
           ></Menu>
         </Box>
       </Toolbar>
-    </Container>
+      </Box>
   );
 };
+
 export default NavBarComponent;

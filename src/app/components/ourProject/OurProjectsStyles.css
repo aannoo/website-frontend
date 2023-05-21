@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #BC5A5B;
 }
 .Content{ 
   height: auto;
@@ -57,7 +57,7 @@
   font-size: 64px;
   line-height: 98px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: black;
 }
 .InfoContent p{
 font-family: 'Roboto', sans-serif;
@@ -65,7 +65,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
-color: #FFFFFF;
+color: black;
 }
 .ImgDisplay {
  margin-left: 100px;

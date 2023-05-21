@@ -17,12 +17,6 @@
     width: 100%;
 }
 
-.heading1, .heading2, .important-message {
-    text-align: left;
-    padding-top: 80px;
-    margin-bottom: -80px;
-    padding-left: 100px;
-}
 
 .heading1  {
     font-size: 128px;
@@ -46,38 +40,6 @@
     color: black;
 }
 
-.icon-grid {
-    font-size: 30px;
-    color: black;
-    height: auto;
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(1, 200px);
-    column-gap: 250px;
-    margin:auto;
-    margin-top: -250px;
-}
-
-.grid-object {
-    padding-left: 75px;
-    margin-top: -300px;
-    padding: 10px;
-}
-
-.signup-button {
-    background-color: #370E4A;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px 10px;
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
 .exercise-everyday-container {
     width: auto;
     height: auto;
@@ -100,14 +62,6 @@ img {
     margin-right: auto;
 }
 
-.enlarge-img {
-    width: 750px;
-    height: auto;
-    margin-left: 1000px;
-    position: relative;
-    top: -600px;
-}
-
 
   
   .signup-button:hover {
@@ -119,25 +73,6 @@ img {
     background-color: white;
 }
 
-.redback-banner{
-    height: auto;
-    display: grid;
-    grid-template-columns: 400px 870px;
-    grid-template-rows: auto;
-    column-gap: 20px;
-    justify-content: center;
-    margin:auto;
-}
-
-
-.home-logo {
-    width: 750px;
-    height: auto;
-    padding: 60px 0;
-    padding-right: 100px;
-    margin-bottom: 0;
-    margin-left: -200px;
-}
 .info h3 {
     padding-bottom: 50px;
     font-size: 48px;
@@ -153,32 +88,12 @@ img {
     font-size: 36px;
 }
 
-.info-text-box {
-    width: 1000px; 
-    height: 500px;
-    border-radius: 50px;
-    padding: 10px; 
-    background-color: #D6594C;  
-    margin-top: 75px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    overflow: hidden;
-}
-
-.directors-container {
-    width: 1240px;
-    height: 487px;
-    margin: 60px auto;
-    background-color: #DFD8E2;
-    border-radius: 20px;
-}
-
 .students-container {
     width: auto;
     height: auto;
-    margin: 100px auto;
+    margin: 40px auto;
     border-radius: 20px;
-    padding-top: 50px;
+    padding: 0 80px;
 }
 
 .board-directors h3{
@@ -201,31 +116,11 @@ img {
     text-align: center;
 }
 
-.board-directors-members {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: auto;
-}
-
 .grid-directors h4 {
     padding-top: 20px;
     font-size: 20px;
     color: black;
     text-align: center;
-}
-
-.student-directors-members {
-    display: grid;
-    grid-template-columns: repeat(2, 450px);
-    grid-template-rows: repeat(3, 200px);
-    column-gap: 240px;
-    justify-content: center;
-}
-
-.grid-students{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
 }
 
 .grid-students h4{
@@ -234,15 +129,13 @@ img {
     color: black;
     width: 300px;
     vertical-align: text-top;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 10px;
 }
 
 .grid-students p {
     color: black;
     width: 300px;
     font-size: 18px;
-    padding-left: 50px;
 }
 
 .user-info {
@@ -297,104 +190,9 @@ img {
     left: 0;
 }
 
-.mvg-container{
-    width: 100%;
-    height: 600px;
-    padding-top: 750px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.mvg-img1{
-    width: 35%;
-    margin-bottom: 150px;
-    padding-top: 100px;
-}
-
-.mvg-img2{
-    width: 35%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    position: absolute;
-    right: 0;
-    padding: 10px; 
-}
-
-.mvg-img3{
-    width: 35%;
-    margin-bottom: 550px;
-    padding-top: 150px;
-}
-.mvg-logos{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.mvg-container h3{
-    font-weight: bold;
-    color: #40214A;
-    font-size: 96px;
-}
-
-.mvg-title1{
-    margin-left: 800px;
-    margin-top: -500px;
-}
-
-.mvg-title2{
-    margin-top: 100px;
-    margin-left: 100px;
-}
-
-.mvg-title3{
-    margin-left: 1000px;
-    margin-top: -1000px;
-}
-
-.mvg-container p{
-    font-size: 36px;
-}
-
-.mvg-paragraph1{
-    margin-left: 800px;
-}
-
-.mvg-paragraph2{
-    margin-left: 100px;
-}
-
-.mvg-container ul{
-    font-size: 36px;
-    margin-left: 1000px;
-}
-
-.students-container,
-.mvg-container {
+.students-container {
   display: inline-block;
   width: 100%;
-}
-
-.project-title{
-    font-weight: bolder;
-    color: #D6594C;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-}
-
-.projects-container{
-    width: 1100px;
-    height: auto;
-    color: black;
-    text-align: center;
-    background-color: #40214A;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .projects-container p{
@@ -403,37 +201,6 @@ img {
   max-width: 400px;
   margin: 1 auto;
 }
-
-.project-name{
-    display: inline;
-    margin: 0;
-    font-weight: bold;
-    color: white;
-    margin-top: -15px;
-}
-
-
-.project-number{
-    display: inline;
-    margin-right: 25px;
-    color: #D6594C;
-}
-
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1px;
-    max-width: 800px;
-    margin-left: 100px;
-}
-
-.project {
-    display: flex;
-    width: calc(150% - 10px); 
-    line-height: 0.02;
-    align-items: center;
-}  
 
 .project-info {
     display: inline-block;
@@ -485,8 +252,7 @@ img {
 .footer-msg{
     color: black;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 0;
+    margin: 40px 40px 0;
     padding-bottom: 40px;
 }
 
@@ -505,3 +271,334 @@ img {
         justify-content: center;
     }
 } 
+
+
+.sports-img {
+    height: 175px; 
+}
+
+.mvg-img1, .mvg-img2, .mvg-img3 {
+    width: 20%;
+}
+
+.heading1, .heading2 {
+    font-size: 64px; 
+}
+
+.exercise-everyday-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 60px auto;
+    padding: 0 80px;
+    flex-wrap: nowrap;
+}
+
+.enlarge-img {
+    min-width: 10%;
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+}
+
+
+
+.icon-grid {
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.grid-object {
+    padding: 10px;
+}
+
+.heading1, .heading2, .important-message {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.important-message {
+    margin-bottom: 0;
+}
+
+.signup-button {
+    background-color: #370E4A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px 10px;
+    margin-top: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .heading1 {
+    margin-bottom: -15px;
+    color: #370E4A;
+  }
+
+
+  .redback-banner{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 80px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+.home-logo {
+    width: auto;
+    height: 300px;
+    flex-grow: 1;
+}
+
+.info-text-box {
+    border-radius: 50px;
+    padding: 10px; 
+    background-color: #D6594C;  
+    overflow: hidden;
+    flex-grow: 3;
+}
+
+.info h3 {
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info p {
+    font-size: 25px;
+}
+
+
+.mvg-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+  }
+  
+  .mvg-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .mvg-img {
+    flex: 1;
+  }
+  
+  .mvg-content {
+    flex: 2;
+  }
+
+
+  
+  .mvg-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+
+  
+
+  .mvg-title {
+    color: #692E47;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .mvg-paragraph, .mvg-content ul {
+    color: #000000;
+    font-size: 25px;
+  }
+  
+
+
+.mvg-logos{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.directors-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 60px auto;
+    background-color: #DFD8E2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-directors-members,
+.student-directors-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-directors,
+.grid-students {
+    flex: 0 1 calc(25% - 1em);
+    margin: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-directors,
+    .grid-students {
+        flex: 0 1 calc(50% - 1em);
+    }
+    .redback-banner {
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .info p {
+        font-size: 20px;
+    }
+    .info h3 {
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    .info {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mvg-item {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .mvg-item.reverse {
+        flex-direction: column;
+    }
+    .mvg-container {
+        padding: 20px 20px;
+    }
+    .mvg-paragraph, .mvg-content ul {
+        font-size: 18px;
+    }
+    .mvg-img {
+        width: 50%;
+    }
+    .students-container {
+        padding: 0 20px;
+    }
+}
+
+
+.project-title{
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects-container{
+    height: auto;
+    color: black;
+    text-align: center;
+    background-color: #40214A;
+    border-radius: 20px;
+    margin: auto;
+    margin: 50px 80px 30px 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.project-columns {
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    padding: 0 80px 20px;
+  }
+  
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.project-number, .project-name {
+    text-align: left;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .project-columns {
+        flex-direction: column;
+    }
+
+    .project-column {
+        width: 100%;
+    }
+
+    .exercise-everyday-container {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 40px;
+    }
+    .sports-img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .heading1, .heading2, .important-message {
+        white-space: normal;
+    }
+    .important-message {
+        font-size: 25px;
+    }
+    .heading1, .heading2 {
+        font-size: 35px;
+    }
+
+    .redback-banner{
+        flex-direction: column;
+    }
+    .project-columns {
+        padding: 0 40px 20px;
+    }
+    .projects-container {
+        margin: 20px;
+    }
+}

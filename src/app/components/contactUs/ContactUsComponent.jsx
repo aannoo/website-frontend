@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, TextField, Button, Typography } from "@mui/material";
 import "./ContactUs.css";
 import "@fontsource/bodoni-moda";
@@ -38,8 +38,44 @@ const CssTextField = withStyles({
 })(TextField);
 
 export default function ContactUsComponent() {
+  const [toastVisible, setToastVisible] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(form.name && form.email && form.phone && form.message) {
+      setToastVisible(true);
+      setTimeout(() => setToastVisible(false), 3000);
+
+      // Clear form
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    }
+  };
+
   return (
     <div className="contactUs-center">
+      {/* Toast message */}
+      <div className={`toast ${toastVisible ? "show" : ""}`}>
+        Submitted
+      </div>
+
       <Grid container direction="column" alignItems="center">
         <Grid item xs={12} sm={6}>
           <Typography
@@ -57,14 +93,14 @@ export default function ContactUsComponent() {
           <Typography
             gutterBottom
             variant="h6"
-            style={{ marginTop: "10px", color: "#fff", textAlign: "center", fontSize: "46px" }}
+            style={{ marginTop: "10px", color: "#692E47", textAlign: "center", fontSize: "46px" }}
           >
             Redback Operation
           </Typography>
           <Typography
             gutterBottom
             variant="h6"
-            style={{ marginTop: "10px", color: "#fff", textAlign: "center", fontSize: "30px" }}
+            style={{ marginTop: "10px", color: "#692E47", textAlign: "center", fontSize: "30px" }}
           >
             E-mail - <a href="mailto:admin@mail.com">admin@mail.com</a>
           </Typography>
@@ -79,10 +115,13 @@ export default function ContactUsComponent() {
               width: '100%',
             }}
           >
-            <form>
+            <form onSubmit={handleSubmit}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <CssTextField
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
                     placeholder="Enter your name"
                     label="Name"
                     variant="outlined"
@@ -92,6 +131,9 @@ export default function ContactUsComponent() {
                 </Grid>
                 <Grid item xs={12}>
                   <CssTextField
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
                     type="email"
                     placeholder="Enter email"
                     label="Email"
@@ -102,6 +144,9 @@ export default function ContactUsComponent() {
                 </Grid>
                 <Grid item xs={12}>
                   <CssTextField
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
                     type="number"
                     placeholder="Enter phone number"
                     label="Phone"
@@ -112,6 +157,9 @@ export default function ContactUsComponent() {
                 </Grid>
                 <Grid item xs={12}>
                   <CssTextField
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
                     label="Message"
                     multiline
                     rows={4}
@@ -122,31 +170,31 @@ export default function ContactUsComponent() {
                   />
                 </Grid>
               </Grid>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  mt: 2
+                }}
+              >
+                <Button
+                  style={{
+                    borderRadius: '20px',
+                    backgroundColor: "#5c2a91",
+                    color: "white",
+                    textTransform: 'uppercase',
+                    padding: '10px 20px',
+                    width: '236px',
+                    marginBottom: '0'
+                  }}
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                >
+                  Submit
+                </Button>
+              </Box>
             </form>
-          </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              mt: 2
-            }}
-          >
-            <Button
-              style={{
-                borderRadius: '20px',
-                backgroundColor: "#5c2a91",
-                color: "white",
-                textTransform: 'uppercase',
-                padding: '10px 20px',
-                width: '236px',
-                marginBottom: '40px'
-              }}
-              type="submit"
-              variant="contained"
-              color="primary"
-            >
-              Submit
-            </Button>
           </Box>
         </Grid>
       </Grid>

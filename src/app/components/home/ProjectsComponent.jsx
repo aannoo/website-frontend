@@ -6,33 +6,34 @@ import { RecordVoiceOver } from "@material-ui/icons";
 export default function ProjectBanner() {
   const projects = data.projects;
 
-  const sortedProjects = projects.sort((a, b) => {
-    if (a.number === 6 || a.number === 12) {
-      return 1;
-    } else if (b.number === 6 || b.number === 12) {
-      return -1;
-    } else if (a.number % 6 === 0) {
-      return -1;
-    } else if (b.number % 6 === 0) {
-      return 1;
-    } else if (a.number % 6 === b.number % 6) {
-      return a.number - b.number;
-    } else {
-      return a.number % 6 - b.number % 6;
-    }
-  });
+  // Sort the projects
+  const sortedProjects = projects.sort((a, b) => a.number - b.number);
+
+  // Split the sorted projects into two arrays
+  const leftProjects = sortedProjects.slice(0, Math.ceil(sortedProjects.length / 2));
+  const rightProjects = sortedProjects.slice(Math.ceil(sortedProjects.length / 2));
 
   return (
     <div className="projects-container">
       <h2 className="project-title">List of Our Projects</h2>
-      <div className="project-list">
-        {sortedProjects.map((project) => (
-          <div key={project.number} className="project">
-            <p className="project-number">Project {project.number}:</p>
-            <p className="project-name">{project.name}</p>
-          </div>
-        ))}
+      <div className="project-columns">
+        <div className="project-column">
+          {leftProjects.map((project, index) => (
+            <div key={project.number} className="project">
+              <span className="project-number">Project {project.number}: </span>
+              <span className="project-name">{project.name}</span>
+            </div>
+          ))}
+        </div>
+        <div className="project-column">
+          {rightProjects.map((project, index) => (
+            <div key={project.number} className="project">
+              <span className="project-number">Project {project.number}: </span>
+              <span className="project-name">{project.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
-}  
+}

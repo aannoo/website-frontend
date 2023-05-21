@@ -13,6 +13,7 @@ export default function Carousel() {
   return (
     <>
     <div className="exercise-everyday-container">
+      <div>
       <p className="heading1">Exercise</p>
       <p className = "heading2">Everyday</p>
       <p className="important-message">Challenging yourself every day</p> 
@@ -20,6 +21,7 @@ export default function Carousel() {
       <Link to="/signup">
         <button className="signup-button">GET STARTED</button>
       </Link>
+      </div>
       <div><img src = {exercise_everyday} class="enlarge-img"/></div>
     </div>
     <div className="icon-grid">
